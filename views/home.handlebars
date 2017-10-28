@@ -1,0 +1,65 @@
+<div class='heading'>
+  <div class='container-fluid'>
+
+    <div class='image-container'></div>
+
+    <h1 class='cool-heading align-baseline'>
+      <span>P</span>
+      <span>h</span>
+      <span>r</span>
+      <span>e</span>
+      <span>s</span>
+      <span>h</span>
+      <span>N</span>
+      <span>e</span>
+      <span>w</span>
+      <span>s</span>
+    </h1>
+
+    <p class='animated fadeInUp'>Bringing you the phreshest of news</p>
+
+  </div>
+</div>
+
+<div class='articles'>
+
+
+
+  <div class='articles-inner container-fluid'>
+    <!-- articles will go here -->
+
+      <div class='button-holder'>
+        <div class="row">
+          <div class="col-sm-6">
+            <button type="button" name="subReddit" class='btn btn-1 animated fadeIn'>Change</button>
+          </div>
+          <div class="col-sm-6">
+            <button type="button" name="scrapeBtn" class='btn btn-2 animated fadeIn'>Scrape</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="wrapper">
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="articles"></div>
+          </div>
+          <div class="col-sm-6">
+            <div id="notes"></div>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+<div class="footer">
+  <h6>Developed By</h6>
+  <p>Christopher Cerrachio</p>
+</div>
+
+{{#each scripts}}
+  <script type="text/javascript" src="{{script}}"></script>
+{{/each}}
