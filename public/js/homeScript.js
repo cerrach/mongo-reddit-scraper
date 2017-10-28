@@ -24,6 +24,7 @@ $(".btn-1").on("click",function(){
 $(".btn-2").on("click",function(){
 
   $("#articles").empty();
+  $("#notes").empty();
 
   var newReddit = $("#redditInput").val();
 
