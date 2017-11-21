@@ -44,6 +44,9 @@ $(".btn-2").on("click",function(){
         if(data[i].link.endsWith("/")){
             var adjustedLink = data[i].link.substring(0,data[i].link.length - 1);
             articleContainer.append(`<a target='_blank' href=${adjustedLink}>${adjustedLink}</a>`);
+        }else if(data[i].link.beginsWith("/"){
+            var adjustedLink = "https://www.reddit.com/" + data[i].link;
+            articleContainer.append(`<a target='_blank' href=${adjustedLink}>${adjustedLink}</a>`);
         }else{
             articleContainer.append(`<a target='_blank' href=${data[i].link}>${data[i].link}</a>`);
         }
